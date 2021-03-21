@@ -75,7 +75,7 @@ def main():
 
     try:
         while True:
-            user_input = input("Enter mode (You have three modes: color light, party, Disco, ColorWipe, Rainbow, Read, Date, Night, Nightstar): ")
+            user_input = input("Enter mode (You have eight modes: color light, party, Disco, Christmas, Rainbow, Read, Date, Sleep): ")
             #### read
             if user_input.lower() == 'read':
                 mode = input('Enter the mode you want to display (1=>2=>3 =>warmer): ')
@@ -222,12 +222,11 @@ def main():
                         theaterChase(strip, Color(255, 255, 0),100) # yellow
                         theaterChase(strip, Color(0, 255, 0),100)
                         theaterChase(strip, Color(255, 0, 0),100)
-
                     except KeyboardInterrupt:
                         colorWipe_new(strip, Color(0,0,0))
                         break
-            ### nightstar        
-            elif user_input.lower() == "nightstar":
+            ### sleep        
+            elif user_input.lower() == "sleep":
                 ls = [i for i in range(LED_COUNT)]
                 ls_sub = [ls[i:i+10] for i in range(0, LED_COUNT, 10)]
                 brightness = 255
