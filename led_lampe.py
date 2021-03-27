@@ -1,7 +1,5 @@
-# WS2812 LED Matrix Cylinder
-# by M Oehler
-# https://hackaday.io/project/162035-led-matrix-cylinder
-# Released under a "Simplified BSD" license
+# WS2812 LED Lamp
+# by Gruppe H
 
 import time, random, sys
 import argparse
